@@ -1,0 +1,65 @@
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-size: 30px;
+    padding-left: 75px;
+}
+
+nav {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: grey;
+    border-bottom: 2px;
+    transform: translateY(-100%);
+    transition: transform 300ms;
+}
+
+a {
+    display: inline-block;
+    width: 300px;
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: lightblue;
+    color: white;
+}
+
+nav.active {
+    transform: none;
+}
+
+p {
+    font-size: 20px;
+}
+
+#menu {
+    height: 100px;
+    position: fixed;
+    z-index: 100;
+    padding-top: 25px;
+    top: 0;
+    left: 0;
+}
+
+#home {
+    margin-top: 200px;
+}
+
+#pizza {
+    transform: translate(-110%);
+    transition: transform 1s;
+}
+
+#pizza.show {
+    transform: none;
+}
